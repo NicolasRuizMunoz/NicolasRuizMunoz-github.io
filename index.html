@@ -2,13 +2,78 @@
 <html>
     <head>
         <title> Primera pagina de Nicolas Ruiz</title>
+        <link rel="stylesheet"  href="style.css">
     </head>
     <body>
-        <h1> Hola! Mi nombre es Nicolas Ruiz</h1>
-        <u1>
-            <l1> Estudio Ingenieria en ciancias dela computacion</l1>
-            <l1> Entre a la universidad el 2021</l1>
-            <l1><a href="https://github.com/NicolasRuizMunoz"></a> Este es mi github</l1>
-        </u1>
+        <h1 id="titulo" style="background-color: lightcyan;"> Hello! My name is Nicolas Ruiz</h1>
+        <ul>
+            <li> I study Computer Science Engineering</li>
+            <li> I entered university in 2021</li>
+            <li><a href="https://github.com/NicolasRuizMunoz">This is my GitHub</a></li>
+            <li> Some information about me: </li>
+            <ol style="font-family: 'Trebuchet MS'; font-size: 12px;">
+                <li class="difcolor">Graduated from Craighouse School in 2020</li>
+                <li class="difcolor">Born in Colombia, and I have been living in Chile since 2010</li>
+                <li class="difcolor">Chose Engineering to have more time to choose a career and I was very attracted to the field of Computer and Information Sciences</li>
+            </ol>
+        </ul>
+
+        <table>
+            <tr class="header">
+                <td> Skills </td>
+                <td> Level </td>
+            </tr>
+            <tr>
+                <td> Python </td>
+                <td> advanced </td>
+            </tr>
+            <tr>
+                <td> JavaScript </td>
+                <td> Basic </td>
+            </tr>
+            <tr>
+                <td> HTML/CSS </td>
+                <td> Medium </td>
+            </tr>
+            <tr>
+                <td> Git </td>
+                <td> Medium/advancecd </td>
+            </tr>
+            <tr>
+                <td> Excel </td>
+                <td> Basic </td>
+            </tr>
+            <tr>
+                <td> SQL </td>
+                <td> Advanced </td>
+            </tr>
+            <tr>
+                <td> Ruby </td>
+                <td> NULL (for now) </td>
+            </tr>
+            <tr>
+                <td> English </td>
+                <td> Advanced </td>
+            </tr>
+            <tr>
+                <td> Spanish </td>
+                <td> Native </td>
+            </tr>
+        </table>
+        
+        <button id="boton" class="boton"> Type your name! </button>
+        <input type="text" id="nombre">
+
+        <script>
+            var boton = document.getElementById("boton");
+            var nombreInput = document.getElementById("nombre");
+            var titulo = document.getElementById("titulo");
+        
+            boton.addEventListener("click", function() {
+                var nuevoNombre = nombreInput.value;
+                titulo.textContent = "Welcome to my profile " + nuevoNombre;
+            });
+        </script>
+
     </body>
 </html>
