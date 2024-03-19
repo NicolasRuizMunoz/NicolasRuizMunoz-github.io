@@ -1,31 +1,15 @@
-td {
-    padding: 10px;
-    text-align: center;
-    
-    
-}
-
-td, tr {
-    border: 1px solid;
-    color:cadetblue;
-    
-}
-
-table{
-    background-color: lightgrey;
-
-}
-
 .boton{
     margin-top: 15px;
 }
 
-tr.header{
-    font-size: 25px;
-    font-family: 'Gill Sans';
-    font-weight: bold;
+li.difcolor{
+    color: #03cafc;
 }
 
-li.difcolor{
-    color: green;
+.center-table{
+    margin: 0 auto
+}
+
+row.color{
+    background-color: lightcyan;
 }
